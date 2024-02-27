@@ -36,7 +36,7 @@ module.exports = () => {
 
       new InjectManifest({
         swSrc: "./src-sw.js",
-        swDest: "service-worker.js",
+        swDest: "src-sw.js",
       }),
 
       // Creates a manifest.json file.
@@ -48,8 +48,8 @@ module.exports = () => {
         description: "A text editor for online and offline use!",
         background_color: "#225ca3",
         theme_color: "#225ca3",
-        start_url: "./",
-        publicPath: "./",
+        start_url: "/",
+        publicPath: "/",
         icons: [
           {
             src: path.resolve("src/images/logo.png"),

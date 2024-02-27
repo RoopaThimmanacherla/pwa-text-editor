@@ -18,7 +18,7 @@ export const putDb = async (content) => {
   const jateDb = await openDB("jate", 1);
   const tx = jateDb.transaction("jate", "readwrite");
   const store = tx.objectStore("jate");
-  const request = store.put({ id: id, jates: content });
+  const request = store.put({ id: 1, value: content });
   const result = await request;
   if (result) {
     console.log("Data saved to the database", result);
@@ -40,13 +40,13 @@ export const getDb = async () => {
   // Open up the desired object store.
   const store = tx.objectStore("jate");
 
-  // Use the .getAll() method to get all data in the database.
-  const request = store.getAll();
+  // Use the .get(id) method to get all data in the database.
+  const request = store.get(1);
 
   // Get confirmation of the request.
   const result = await request;
-  console.log("result.value", result);
-  return result;
+  console.log("result.value", result.value);
+  return result ? result.value : null;
 
   console.error("getDb not implemented");
 };
