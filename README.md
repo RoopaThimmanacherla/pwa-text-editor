@@ -20,6 +20,11 @@ This program has has dependencies, and requires their installation via npm. This
 
 ![cache](image-3.png)
 
-![Deployed url on Render](https://pwa-text-editor-1-hec0.onrender.com/)
+![Installed App on Desktop](https://github.com/RoopaThimmanacherla/pwa-text-editor/assets/144958836/7484ada8-14ee-4df0-960e-533bfc521ce4)
 
-![Github url](https://github.com/RoopaThimmanacherla/pwa-text-editor)
+
+[Deployed url on Render](https://pwa-text-editor-1-hec0.onrender.com/)
+
+[Github url](https://github.com/RoopaThimmanacherla/pwa-text-editor)
+
+
